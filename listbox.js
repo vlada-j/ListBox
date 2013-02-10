@@ -1,6 +1,13 @@
-//*******************************************************************************************
-// ListBox JS -------------------------------------------------------------------------------
-//  -----------------------------------------------------------------------------------------
+/*
+ * jQuery ListBox v1.0
+ * https://github.com/vlada-j/ListBox
+ *
+ * Copyright 2012, Vlada Janosevic
+ * http://www.vladajanosevic.info/
+ * Free to use and change
+ *
+ * Required: jQuery 1.7.1
+ */
 jQuery.fn.ListBox=function(options){
 
 	// Default plugin settings
