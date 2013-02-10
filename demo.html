@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 	<head>
-        <meta charset="utf-8">
-        <title>..:: ListBox-JS ::..</title>
-        <meta name="description" content="">
+        	<meta charset="utf-8">
+        	<title>..:: ListBox ::..</title>
+        	<meta name="description" content="">
 		<meta name="autor" content="Vlada Janošević - VJ">
 		<link rel="stylesheet" href="style.css">
 	</head>
@@ -24,6 +24,7 @@
 				<li><img src="http://cdn1.iconfinder.com/data/icons/iconsland-weather/PNG/256x256/Rainbow.png"></li>
 			</ul>
 		</div>
+
 		<div class="listbox lightThem" data-orientation="horizontal" style="width:768px;">
 			<ul>
 				<li><img src="http://cdn1.iconfinder.com/data/icons/iconsland-weather/PNG/256x256/Sunny.png"></li>
@@ -41,13 +42,13 @@
 		</div>
 
 		<!-- SCRIPT -->
-        <script src="jquery-1.7.1.min.js"></script>
+        	<script src="jquery-1.7.1.min.js"></script>
 		<script src="listbox.js"></script>
 		<script>
-			var HLB, VLB;
-				$(window).ready(function(){
-					HLB = $('.listbox').ListBox();
-				//	VLB = $('.listbox').ListBox({step:276, orientation:'vertical'});
+		$(window).ready(function(){
+			$('.listbox').ListBox();
+			// or with options
+			//$('.listbox').ListBox({step:276, orientation:'vertical'});
 			});
 		</script>
 	</body>
