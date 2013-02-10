@@ -1,5 +1,5 @@
 /* ***************************************************************************************
- * ListBox JS - Base styles - DO NOT CHANGE
+ * ListBox - Base styles - DO NOT CHANGE
  * *************************************************************************************** */
 .listbox {
 	margin:0;
@@ -41,7 +41,7 @@
 .listbox > #next.disable {display:none;}
 
 /* ***************************************************************************************
- * ListBox JS - Horizontal orientation - DO NOT CHANGE
+ * ListBox - Horizontal orientation - DO NOT CHANGE
  * *************************************************************************************** */
 .listbox[data-orientation=horizontal] {width:100%; height:auto; padding:0 25px;}
 .listbox[data-orientation=horizontal] > .viewport {float:left; clear:none; white-space:nowrap;}
@@ -53,7 +53,7 @@
 .listbox[data-orientation=horizontal] > #next {right:0;}
 
 /* ***************************************************************************************
- * ListBox JS - Vertical orientation - DO NOT CHANGE
+ * ListBox - Vertical orientation - DO NOT CHANGE
  * *************************************************************************************** */
 .listbox[data-orientation=vertical] {width:auto; height:100%; padding:25px 0;}
 .listbox[data-orientation=vertical] > .viewport {float:none; clear:both; white-space:normal;}
@@ -67,7 +67,7 @@
 
 
 /* ***************************************************************************************
- * ListBox JS - light style - FREE TO CHANGE :)
+ * ListBox - light style - FREE TO CHANGE :)
  * *************************************************************************************** */
 .listbox.lightThem {
 	border:1px solid #A5A9AC;
