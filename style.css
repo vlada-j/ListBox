@@ -1,0 +1,154 @@
+/* ***************************************************************************************
+ * ListBox JS - Base styles - DO NOT CHANGE
+ * *************************************************************************************** */
+.listbox {
+	margin:0;
+	padding:0;
+	width:auto;
+	height:auto;
+	overflow:hidden;
+	position:relative;
+	display:inline-block;}
+.listbox > .viewport {
+	width:100%;
+	height:100%;
+	display:block;
+	overflow:hidden;
+	position:relative;
+	text-align:center;}
+.listbox > ul,
+.listbox > .viewport > ul {
+	padding:0;
+	width:auto;
+	margin:auto;
+	display:block;
+	overflow:hidden;
+	text-align:left;
+	white-space:nowrap;
+	list-style-type:none;}
+.listbox > ul li,
+.listbox > .viewport > ul li {list-style-type:none;}
+.listbox > #prev,
+.listbox > #next {
+	z-index:9999;
+	display:block;
+	cursor:pointer;
+	position:absolute;
+	text-decoration:none;
+	-webkit-user-select:none;
+	   -moz-user-select:none;}
+.listbox > #prev.disable,
+.listbox > #next.disable {display:none;}
+
+/* ***************************************************************************************
+ * ListBox JS - Horizontal orientation - DO NOT CHANGE
+ * *************************************************************************************** */
+.listbox[data-orientation=horizontal] {width:100%; height:auto; padding:0 25px;}
+.listbox[data-orientation=horizontal] > .viewport {float:left; clear:none; white-space:nowrap;}
+.listbox[data-orientation=horizontal] > .viewport > ul {white-space:nowrap;}
+.listbox[data-orientation=horizontal] > .viewport > ul li {display:inline-block; clear:none; float:left; width:auto;}
+.listbox[data-orientation=horizontal] > #prev,
+.listbox[data-orientation=horizontal] > #next {width:25px; height:100%;}
+.listbox[data-orientation=horizontal] > #prev {left:0;}
+.listbox[data-orientation=horizontal] > #next {right:0;}
+
+/* ***************************************************************************************
+ * ListBox JS - Vertical orientation - DO NOT CHANGE
+ * *************************************************************************************** */
+.listbox[data-orientation=vertical] {width:auto; height:100%; padding:25px 0;}
+.listbox[data-orientation=vertical] > .viewport {float:none; clear:both; white-space:normal;}
+.listbox[data-orientation=vertical] > .viewport > ul {white-space:normal;}
+.listbox[data-orientation=vertical] > .viewport > ul li {display:block; clear:both; float:none; height:auto;}
+.listbox[data-orientation=vertical] > #prev,
+.listbox[data-orientation=vertical] > #next {width:100%; height:25px;}
+.listbox[data-orientation=vertical] > #prev {top:0;}
+.listbox[data-orientation=vertical] > #next {bottom:0;}
+
+
+
+/* ***************************************************************************************
+ * ListBox JS - light style - FREE TO CHANGE :)
+ * *************************************************************************************** */
+.listbox.lightThem {
+	border:1px solid #A5A9AC;
+	-webkit-border-radius:10px;
+	   -moz-border-radius:10px;
+	        border-radius:10px;}
+/* Horizontal */
+.listbox[data-orientation=horizontal].lightThem {
+	height:260px;
+	padding:5px 40px;
+	background:#C0C0C0;
+	background:-moz-linear-gradient		(top, #CED2D3 0%, #F9FBFA 100%);
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #CED2D3), color-stop(100%, #F9FBFA));
+	background:-webkit-linear-gradient	(top, #CED2D3 0%, #F9FBFA 100%);
+	background:-o-linear-gradient		(top, #CED2D3 0%, #F9FBFA 100%);
+	background:-ms-linear-gradient		(top, #CED2D3 0%, #F9FBFA 100%);
+	background:linear-gradient			(top, #CED2D3 0%, #F9FBFA 100%);}
+.listbox[data-orientation=horizontal].lightThem > #prev,
+.listbox[data-orientation=horizontal].lightThem > #next {
+	height:254px;
+	color:#A5A9AC;
+	line-height:254px;
+	text-align:center;
+	border:1px solid #A5A9AC;
+	background:#EBEBEB;
+	background:-moz-linear-gradient		(left, #F0F0F0 0%, #EBEBEB 100%);
+	background:-webkit-gradient(linear, left top, right top, color-stop(0%, #F0F0F0), color-stop(100%, #EBEBEB));
+	background:-webkit-linear-gradient	(left, #F0F0F0 0%, #EBEBEB 100%);
+	background:-o-linear-gradient		(left, #F0F0F0 0%, #EBEBEB 100%);
+	background:-ms-linear-gradient		(left, #F0F0F0 0%, #EBEBEB 100%);
+	background:linear-gradient			(left, #F0F0F0 0%, #EBEBEB 100%);}
+.listbox[data-orientation=horizontal].lightThem > #prev {
+	left:5px;
+	-webkit-border-radius:10px 0 0 10px;
+	   -moz-border-radius:10px 0 0 10px;
+	        border-radius:10px 0 0 10px;}
+.listbox[data-orientation=horizontal].lightThem > #next {
+	right:5px;
+	-webkit-border-radius:0 10px 10px 0;
+	   -moz-border-radius:0 10px 10px 0;
+	        border-radius:0 10px 10px 0;}
+.listbox[data-orientation=horizontal].lightThem > #prev:before {content:"◄";}
+.listbox[data-orientation=horizontal].lightThem > #next:before {content:"►";}
+.listbox[data-orientation=horizontal].lightThem > #prev:hover {}
+.listbox[data-orientation=horizontal].lightThem > #next:hover {}
+/* Vertical */
+.listbox[data-orientation=vertical].lightThem {
+	width:260px;
+	padding:40px 5px;
+	background:#C0C0C0;
+	background:-moz-linear-gradient		(top, #CED2D3 0%, #F9FBFA 100%);
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #CED2D3), color-stop(100%, #F9FBFA));
+	background:-webkit-linear-gradient	(top, #CED2D3 0%, #F9FBFA 100%);
+	background:-o-linear-gradient		(top, #CED2D3 0%, #F9FBFA 100%);
+	background:-ms-linear-gradient		(top, #CED2D3 0%, #F9FBFA 100%);
+	background:linear-gradient			(top, #CED2D3 0%, #F9FBFA 100%);}
+.listbox[data-orientation=vertical].lightThem > #prev,
+.listbox[data-orientation=vertical].lightThem > #next {
+	width:254px;
+	color:#A5A9AC;
+	line-height:27px;
+	text-align:center;
+	border:1px solid #A5A9AC;
+	background:#EBEBEB;
+	background:-moz-linear-gradient		(top, #F0F0F0 0%, #EBEBEB 100%);
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #F0F0F0), color-stop(100%, #EBEBEB));
+	background:-webkit-linear-gradient	(top, #F0F0F0 0%, #EBEBEB 100%);
+	background:-o-linear-gradient		(top, #F0F0F0 0%, #EBEBEB 100%);
+	background:-ms-linear-gradient		(top, #F0F0F0 0%, #EBEBEB 100%);
+	background:linear-gradient			(top, #F0F0F0 0%, #EBEBEB 100%);}
+.listbox[data-orientation=vertical].lightThem > #prev {
+	top:5px;
+	-webkit-border-radius:10px 10px 0 0;
+	   -moz-border-radius:10px 10px 0 0;
+	        border-radius:10px 10px 0 0;}
+.listbox[data-orientation=vertical].lightThem > #next {
+	bottom:5px;
+	-webkit-border-radius:0 0 10px 10px;
+	   -moz-border-radius:0 0 10px 10px;
+	        border-radius:0 0 10px 10px;}
+.listbox[data-orientation=vertical].lightThem > #prev:before {content:"▲";}
+.listbox[data-orientation=vertical].lightThem > #next:before {content:"▼";}
+.listbox[data-orientation=vertical].lightThem > #prev:hover {}
+.listbox[data-orientation=vertical].lightThem > #next:hover {}
