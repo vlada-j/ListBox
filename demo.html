@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="utf-8">
+        <title>..:: ListBox-JS ::..</title>
+        <meta name="description" content="">
+		<meta name="autor" content="Vlada Janošević - VJ">
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body style="text-align:center;">
+		<div class="listbox lightThem" data-orientation="vertical" data-step="512" style="width:256px; height:512px;">
+			<ul>
+				<li><img src="http://cdn1.iconfinder.com/data/icons/iconsland-weather/PNG/256x256/Sunny.png"></li>
+				<li><img src="http://cdn1.iconfinder.com/data/icons/iconsland-weather/PNG/256x256/Snow_Occasional.png"></li>
+				<li><img src="http://cdn1.iconfinder.com/data/icons/iconsland-weather/PNG/256x256/Wind_Flag_Storm.png"></li>
+				<li><img src="http://cdn1.iconfinder.com/data/icons/iconsland-weather/PNG/256x256/Moon_Phase_Full.png"></li>
+				<li><img src="http://cdn1.iconfinder.com/data/icons/iconsland-weather/PNG/256x256/Night_Rain.png"></li>
+				<li><img src="http://cdn1.iconfinder.com/data/icons/iconsland-weather/PNG/256x256/Overcast.png"></li>
+				<li><img src="http://cdn1.iconfinder.com/data/icons/iconsland-weather/PNG/256x256/Sleet.png"></li>
+				<li><img src="http://cdn1.iconfinder.com/data/icons/iconsland-weather/PNG/256x256/Fog.png"></li>
+				<li><img src="http://cdn1.iconfinder.com/data/icons/iconsland-weather/PNG/256x256/Ice.png"></li>
+				<li><img src="http://cdn1.iconfinder.com/data/icons/iconsland-weather/PNG/256x256/Thermometer_Snowflake.png"></li>
+				<li><img src="http://cdn1.iconfinder.com/data/icons/iconsland-weather/PNG/256x256/Rainbow.png"></li>
+			</ul>
+		</div>
+		<div class="listbox lightThem" data-orientation="horizontal" style="width:768px;">
+			<ul>
+				<li><img src="http://cdn1.iconfinder.com/data/icons/iconsland-weather/PNG/256x256/Sunny.png"></li>
+				<li><img src="http://cdn1.iconfinder.com/data/icons/iconsland-weather/PNG/256x256/Snow_Occasional.png"></li>
+				<li><img src="http://cdn1.iconfinder.com/data/icons/iconsland-weather/PNG/256x256/Wind_Flag_Storm.png"></li>
+				<li><img src="http://cdn1.iconfinder.com/data/icons/iconsland-weather/PNG/256x256/Moon_Phase_Full.png"></li>
+				<li><img src="http://cdn1.iconfinder.com/data/icons/iconsland-weather/PNG/256x256/Night_Rain.png"></li>
+				<li><img src="http://cdn1.iconfinder.com/data/icons/iconsland-weather/PNG/256x256/Overcast.png"></li>
+				<li><img src="http://cdn1.iconfinder.com/data/icons/iconsland-weather/PNG/256x256/Sleet.png"></li>
+				<li><img src="http://cdn1.iconfinder.com/data/icons/iconsland-weather/PNG/256x256/Fog.png"></li>
+				<li><img src="http://cdn1.iconfinder.com/data/icons/iconsland-weather/PNG/256x256/Ice.png"></li>
+				<li><img src="http://cdn1.iconfinder.com/data/icons/iconsland-weather/PNG/256x256/Thermometer_Snowflake.png"></li>
+				<li><img src="http://cdn1.iconfinder.com/data/icons/iconsland-weather/PNG/256x256/Rainbow.png"></li>
+			</ul>
+		</div>
+
+		<!-- SCRIPT -->
+        <script src="jquery-1.7.1.min.js"></script>
+		<script src="listbox.js"></script>
+		<script>
+			var HLB, VLB;
+				$(window).ready(function(){
+					HLB = $('.listbox').ListBox();
+				//	VLB = $('.listbox').ListBox({step:276, orientation:'vertical'});
+			});
+		</script>
+	</body>
+</html>
