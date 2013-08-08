@@ -11,7 +11,7 @@
 jQuery.fn.ListBox=function(options){
 
 	// Default plugin settings
-	settings=jQuery.extend({
+	var settings=jQuery.extend({
 		orientation:	'horizontal',	// value: horizontal | vertical
 		prevButton:		'#prev',
 		nextButton:		'#next',
